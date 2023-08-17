@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp page</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js" integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="signup.js"></script>
+</head>
+
+<body>
+    <style>
+      body  {
+
+        
+          font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+        }
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+form {
+    display: grid;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+    </style>
+    <form action="/" method="post" onsubmit="save();return false;">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Please enter your name" required>
+        <label for="email">Email</label>
+        <div class="input-icon">
+            <span class="icon">&#64;</span>
+        <input type="email" id="email" name="email" placeholder="Please enter your email" required>
+        
+        <label for="phoneNumber">Phone Number</label>
+        <input type="number" id="phoneNumber" name="phoneNumber" placeholder="Please enter your phone number" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Please enter your password" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
